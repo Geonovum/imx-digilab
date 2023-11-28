@@ -20,7 +20,7 @@ let respecConfig = {
   //specType: "AL",                 // Algemeen document
   //specType: "BP",                 // Best Practice
   //-- pubDomain is verplicht! (komt in de URL) -------------------------------------
-  pubDomain: "dk",
+  pubDomain: "imx-digilab",
   //-- license: voor de geldende gebruiksvoorwaarden. Default is cc-by.
   //licence: "cc-by-nd",            // bronvermelding, geen afgeleide werken (default)
   //licence: "cc0",                 // Public Domain Dedication
