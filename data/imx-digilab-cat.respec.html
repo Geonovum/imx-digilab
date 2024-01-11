@@ -1,11 +1,11 @@
 
 <!DOCTYPE HTML><section id="cat" class="normative">
    <h2>Gegevensdefinitie</h2>
-   <!--MIMCM-IMXDigilab-1.0-0-20231128-20231128-111652 imvertor 2.0.0--><a class="anchor" id="global_package_InkomensafhankelijkeHuursverhoging"></a><section id="global_package_InkomensafhankelijkeHuursverhoging">
+   <!--MIMCM-IMXDigilab-1.0-0-20231128-20240111-080301 imvertor 2.0.0--><a class="anchor" id="global_package_InkomensafhankelijkeHuursverhoging"></a><section id="global_package_InkomensafhankelijkeHuursverhoging">
       <h3>Domein   Inkomensafhankelijke huursverhoging</h3>
       <section id="EAID_E1D40597_044B_4576_993B_D118A88B1844">
          <h4>   Inkomensafhankelijke huursverhoging - overzicht</h4>
-         <div class="imageinfo overview"><img src="data/Images/EAID_E1D40597_044B_4576_993B_D118A88B1844.png" usemap="#imagemap-EAID_E1D40597_044B_4576_993B_D118A88B1844" alt="Diagram &#xA;                        &#xA;                     "><map name="imagemap-EAID_E1D40597_044B_4576_993B_D118A88B1844"><area shape="rect" alt="Inkomensafhankelijke huurverhoging" coords="48,59,336,252" href="#graph_EAID_CAFE083C_10E4_40e5_B29A_1193A786CC38"></map><p><b>Inkomensafhankelijke huursverhoging - overzicht</b></p>
+         <div class="imageinfo overview"><img src="data/Images/EAID_E1D40597_044B_4576_993B_D118A88B1844.png" usemap="#imagemap-EAID_E1D40597_044B_4576_993B_D118A88B1844" alt="Diagram &#xA;                        &#xA;                     "><map name="imagemap-EAID_E1D40597_044B_4576_993B_D118A88B1844"><area shape="rect" alt="Inkomenscategorie" coords="176,401,299,540" href="#graph_EAID_E3A2BC22_5E84_4d1e_9AC8_98B9FA886538"><area shape="rect" alt="Inkomensafhankelijke huurverhoging" coords="48,59,336,322" href="#graph_EAID_CAFE083C_10E4_40e5_B29A_1193A786CC38"></map><p><b>Inkomensafhankelijke huursverhoging - overzicht</b></p>
          </div>
       </section>
       <section id="">
@@ -40,26 +40,12 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging_zaaknummer">zaaknummer</a>
+                        <a class="link" href="#detail_attribute_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging_aanvraagnummer">aanvraagnummer</a>
                         </td>
                      <td>
                         
                         <p>Een unieke identificatiecode voor de aanvraagprocedure van de inkomensafhankelijke
-                           huurverhoging.</p>
-                        </td>
-                     <td>
-                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
-                        </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging_identificatieVerblijfsobject">identificatie verblijfsobject</a>
-                        </td>
-                     <td>
-                        
-                        <p>Unieke aanduiding van het verblijfsobject met gebruiksdoel 'woning' waar de inkomensafhankelijke
-                           huurverhoging voor wordt aangevraagd.</p>
+                           huurverhoging. </p>
                         </td>
                      <td>
                         <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
@@ -72,8 +58,9 @@
                         </td>
                      <td>
                         
-                        <p>Samengestelde reeks van straat, huisnummer, huisletter, huisnummertoevoeging, postcode
-                           en/of woonplaats van het verblijfsobject, waar de inkomensafhankelijke huurverhoging
+                        <p>Samengestelde reeks van straat (naam openbare ruimte), huisnummer, huisletter, huisnummertoevoeging,
+                           postcode en/of woonplaats van de nummeraanduiding die het hoofdadres of neven adres
+                           is van het verblijfsobject, van de woning waar de inkomensafhankelijke huurverhoging
                            wordt aangevraagd.</p>
                         </td>
                      <td>
@@ -83,12 +70,46 @@
                   </tr>
                   <tr>
                      <td>
+                        <a class="link" href="#detail_attribute_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging_identificatieVerblijfsobject">identificatie verblijfsobject</a>
+                        </td>
+                     <td>
+                        
+                        <p>Unieke aanduiding van het verblijfsobject (de woning) waar de inkomensafhankelijke
+                           huurverhoging voor wordt aangevraagd. 
+                           Toelichting: tenminste 1 van de gebruiksdoelen van het VBO is ‘woonfunctie’, maar
+                           hier gaat de BRP over. </p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging_verhuurder">verhuurder</a>
+                        </td>
+                     <td>
+                        
+                        <p>De verhuurder van het verblijfsobject, waar de inkomensafhankelijke huurverhoging
+                           voor wordt aangevraagd. Natuurlijk persoon BSN of Niet Natuurlijk Persoon RSIN.
+                           Toelichting: alleen de verhuurder van een woning mag een aanvraag doen. Alleen de
+                           eigenaar van de woning mag de verhuurder zijn (de rol van verhuurder hebben). </p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                        </td>
+                     <td>0 .. *</td>
+                  </tr>
+                  <tr>
+                     <td>
                         <a class="link" href="#detail_attribute_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging_eigenaar">eigenaar</a>
                         </td>
                      <td>
                         
                         <p>De eigenaar van het verblijfsobject, waar de inkomensafhankelijke huurverhoging voor
-                           wordt aangevraagd.</p>
+                           wordt aangevraagd. Natuurlijk persoon BSN of Niet Natuurlijk Persoon RSIN.
+                           Toelichting: het gaat hierbij om de eigenaar zoals vastgesteld door de (LV)WOZ (huidig)
+                           of de BRK (gewenst). </p>
                         </td>
                      <td>
                         <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
@@ -102,7 +123,8 @@
                      <td>
                         
                         <p>De bewoner van het verblijfsobject, waar de inkomensafhankelijke huurverhoging voor
-                           wordt aangevraagd.</p>
+                           wordt aangevraagd.
+                           Toelichting: de bewoner zoals vastgesteld door de BRP. </p>
                         </td>
                      <td>
                         <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
@@ -111,12 +133,63 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging_inkomen">inkomen</a>
+                        <a class="link" href="#detail_attribute_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging_huurder">huurder</a>
                         </td>
                      <td>
                         
-                        <p>De som van het totale jaarinkomen van elke bewoner van het verblijfsobject, waar de
-                           inkomensafhankelijke huurverhoging wordt aangevraagd.</p>
+                        <p>De bewoner van het verblijfsobject, waar de inkomensafhankelijke huurverhoging voor
+                           wordt aangevraagd.
+                           Toelichting: de verhuurder is zelf geen huurder, ongeacht of de verhuurder een bewoner
+                           is van de woning. Alle bewoners die niet de eigenaar zijn worden gezien als een huishouden.
+                           </p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                        </td>
+                     <td>1 .. *</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging_gezamenlijkInkomen">gezamenlijk inkomen</a>
+                        </td>
+                     <td>
+                        
+                        <p>De som van het jaarinkomen van elke huurder van het verblijfsobject, waar de inkomensafhankelijke
+                           huurverhoging wordt aangevraagd.
+                           Toelichting: het inkomen zoals vastgesteld door de BRI. Afhankelijk van de leeftijd
+                           van de natuurlijke persoon telt maar een deel van het inkomen mee. </p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Integer</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging_inkomenscategorie">inkomenscategorie</a>
+                        </td>
+                     <td>
+                        
+                        <p>Aanduiding of het gezamenlijke inkomen van de huurders van het verblijfsobject, volgens
+                           de regelgeving van de inkomensafhankelijke huurverhoging als hoog, midden (hoog) of
+                           als laag (midden) wordt gezien. 
+                           Toelichting: de categorie is afgekort tot H = hoog, M = midden (hoog) en L = laag
+                           (midden). </p>
+                        </td>
+                     <td>
+                        <a class="link" href="#global_class_InkomensafhankelijkeHuursverhoging_Inkomenscategorie">Inkomenscategorie</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging_maximaleHuurverhoging">maximale huurverhoging</a>
+                        </td>
+                     <td>
+                        
+                        <p>Het bedrag in euro’s waarmee de huidige huur maximaal verhoogd mag worden.
+                           Toelichting: per jaar, en nooit meer dan 1x per jaar, en gebaseerd op de regels voor
+                           dit jaar. </p>
                         </td>
                      <td>
                         <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Integer</a>
@@ -129,14 +202,28 @@
             </section>
          </section>
       <section id="">
+         <h4>Enumeraties   </h4>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 70%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th><a class="anchor" id="graph_EAID_E3A2BC22_5E84_4d1e_9AC8_98B9FA886538"></a><a class="anchor" id="global_class_InkomensafhankelijkeHuursverhoging_Inkomenscategorie"></a><a class="link" href="#detail_class_InkomensafhankelijkeHuursverhoging_Inkomenscategorie">Inkomenscategorie</a></th>
+                  <td></td>
+               </tr>
+            </tbody>
+         </table>
+         </section>
+      <section id="">
          <h4>Attribuut- en relatiesoort details  </h4>
          
          <section id="">
             <h5>Objecttype details  </h5>
             <a class="anchor" id="detail_class_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging"></a><section id="detail_class_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging">
                <h6>   Inkomensafhankelijke huurverhoging</h6>
-               <a class="anchor" id="detail_attribute_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging_zaaknummer"></a><div class="deepheader" id="detail_attribute_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging_zaaknummer">
-                  <h7>Attribuutsoort details  <a href="#global_class_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging">Inkomensafhankelijke huurverhoging</a> zaaknummer</h7>
+               <a class="anchor" id="detail_attribute_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging_aanvraagnummer"></a><div class="deepheader" id="detail_attribute_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging_aanvraagnummer">
+                  <h7>Attribuutsoort details  <a href="#global_class_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging">Inkomensafhankelijke huurverhoging</a> aanvraagnummer</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -144,50 +231,14 @@
                      <tbody>
                         <tr>
                            <th>Naam</th>
-                           <td>zaaknummer</td>
+                           <td>aanvraagnummer</td>
                         </tr>
                         <tr>
                            <th>Definitie</th>
                            <td>
                               
                               <p>Een unieke identificatiecode voor de aanvraagprocedure van de inkomensafhankelijke
-                                 huurverhoging.</p>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Type</th>
-                           <td>
-                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
-                              </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               <a class="anchor" id="detail_attribute_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging_identificatieVerblijfsobject"></a><div class="deepheader" id="detail_attribute_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging_identificatieVerblijfsobject">
-                  <h7>Attribuutsoort details  <a href="#global_class_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging">Inkomensafhankelijke huurverhoging</a> identificatie verblijfsobject</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>identificatie verblijfsobject</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              <p>Unieke aanduiding van het verblijfsobject met gebruiksdoel 'woning' waar de inkomensafhankelijke
-                                 huurverhoging voor wordt aangevraagd.</p>
+                                 huurverhoging. </p>
                               </td>
                         </tr>
                         <tr>
@@ -222,8 +273,9 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>Samengestelde reeks van straat, huisnummer, huisletter, huisnummertoevoeging, postcode
-                                 en/of woonplaats van het verblijfsobject, waar de inkomensafhankelijke huurverhoging
+                              <p>Samengestelde reeks van straat (naam openbare ruimte), huisnummer, huisletter, huisnummertoevoeging,
+                                 postcode en/of woonplaats van de nummeraanduiding die het hoofdadres of neven adres
+                                 is van het verblijfsobject, van de woning waar de inkomensafhankelijke huurverhoging
                                  wordt aangevraagd.</p>
                               </td>
                         </tr>
@@ -234,6 +286,82 @@
                         <tr>
                            <th>Kardinaliteit</th>
                            <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_attribute_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging_identificatieVerblijfsobject"></a><div class="deepheader" id="detail_attribute_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging_identificatieVerblijfsobject">
+                  <h7>Attribuutsoort details  <a href="#global_class_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging">Inkomensafhankelijke huurverhoging</a> identificatie verblijfsobject</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>identificatie verblijfsobject</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Unieke aanduiding van het verblijfsobject (de woning) waar de inkomensafhankelijke
+                                 huurverhoging voor wordt aangevraagd. 
+                                 Toelichting: tenminste 1 van de gebruiksdoelen van het VBO is ‘woonfunctie’, maar
+                                 hier gaat de BRP over. </p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_attribute_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging_verhuurder"></a><div class="deepheader" id="detail_attribute_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging_verhuurder">
+                  <h7>Attribuutsoort details  <a href="#global_class_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging">Inkomensafhankelijke huurverhoging</a> verhuurder</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>verhuurder</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>De verhuurder van het verblijfsobject, waar de inkomensafhankelijke huurverhoging
+                                 voor wordt aangevraagd. Natuurlijk persoon BSN of Niet Natuurlijk Persoon RSIN.
+                                 Toelichting: alleen de verhuurder van een woning mag een aanvraag doen. Alleen de
+                                 eigenaar van de woning mag de verhuurder zijn (de rol van verhuurder hebben). </p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>0 .. *</td>
                         </tr>
                         <tr>
                            <th>Type</th>
@@ -260,7 +388,9 @@
                            <td>
                               
                               <p>De eigenaar van het verblijfsobject, waar de inkomensafhankelijke huurverhoging voor
-                                 wordt aangevraagd.</p>
+                                 wordt aangevraagd. Natuurlijk persoon BSN of Niet Natuurlijk Persoon RSIN.
+                                 Toelichting: het gaat hierbij om de eigenaar zoals vastgesteld door de (LV)WOZ (huidig)
+                                 of de BRK (gewenst). </p>
                               </td>
                         </tr>
                         <tr>
@@ -296,7 +426,8 @@
                            <td>
                               
                               <p>De bewoner van het verblijfsobject, waar de inkomensafhankelijke huurverhoging voor
-                                 wordt aangevraagd.</p>
+                                 wordt aangevraagd.
+                                 Toelichting: de bewoner zoals vastgesteld door de BRP. </p>
                               </td>
                         </tr>
                         <tr>
@@ -316,8 +447,8 @@
                      </tbody>
                   </table>
                   </div>
-               <a class="anchor" id="detail_attribute_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging_inkomen"></a><div class="deepheader" id="detail_attribute_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging_inkomen">
-                  <h7>Attribuutsoort details  <a href="#global_class_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging">Inkomensafhankelijke huurverhoging</a> inkomen</h7>
+               <a class="anchor" id="detail_attribute_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging_huurder"></a><div class="deepheader" id="detail_attribute_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging_huurder">
+                  <h7>Attribuutsoort details  <a href="#global_class_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging">Inkomensafhankelijke huurverhoging</a> huurder</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -325,19 +456,136 @@
                      <tbody>
                         <tr>
                            <th>Naam</th>
-                           <td>inkomen</td>
+                           <td>huurder</td>
                         </tr>
                         <tr>
                            <th>Definitie</th>
                            <td>
                               
-                              <p>De som van het totale jaarinkomen van elke bewoner van het verblijfsobject, waar de
-                                 inkomensafhankelijke huurverhoging wordt aangevraagd.</p>
+                              <p>De bewoner van het verblijfsobject, waar de inkomensafhankelijke huurverhoging voor
+                                 wordt aangevraagd.
+                                 Toelichting: de verhuurder is zelf geen huurder, ongeacht of de verhuurder een bewoner
+                                 is van de woning. Alle bewoners die niet de eigenaar zijn worden gezien als een huishouden.
+                                 </p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_attribute_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging_gezamenlijkInkomen"></a><div class="deepheader" id="detail_attribute_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging_gezamenlijkInkomen">
+                  <h7>Attribuutsoort details  <a href="#global_class_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging">Inkomensafhankelijke huurverhoging</a> gezamenlijk inkomen</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>gezamenlijk inkomen</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>De som van het jaarinkomen van elke huurder van het verblijfsobject, waar de inkomensafhankelijke
+                                 huurverhoging wordt aangevraagd.
+                                 Toelichting: het inkomen zoals vastgesteld door de BRI. Afhankelijk van de leeftijd
+                                 van de natuurlijke persoon telt maar een deel van het inkomen mee. </p>
                               </td>
                         </tr>
                         <tr>
                            <th>Toelichting</th>
                            <td>Totale jaarinkomen uit een peiljaar.</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Integer</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_attribute_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging_inkomenscategorie"></a><div class="deepheader" id="detail_attribute_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging_inkomenscategorie">
+                  <h7>Attribuutsoort details  <a href="#global_class_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging">Inkomensafhankelijke huurverhoging</a> inkomenscategorie</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>inkomenscategorie</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Aanduiding of het gezamenlijke inkomen van de huurders van het verblijfsobject, volgens
+                                 de regelgeving van de inkomensafhankelijke huurverhoging als hoog, midden (hoog) of
+                                 als laag (midden) wordt gezien. 
+                                 Toelichting: de categorie is afgekort tot H = hoog, M = midden (hoog) en L = laag
+                                 (midden). </p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>
+                              <a class="link" href="#detail_class_InkomensafhankelijkeHuursverhoging_Inkomenscategorie">Inkomenscategorie</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_attribute_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging_maximaleHuurverhoging"></a><div class="deepheader" id="detail_attribute_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging_maximaleHuurverhoging">
+                  <h7>Attribuutsoort details  <a href="#global_class_InkomensafhankelijkeHuursverhoging_InkomensafhankelijkeHuurverhoging">Inkomensafhankelijke huurverhoging</a> maximale huurverhoging</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>maximale huurverhoging</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Het bedrag in euro’s waarmee de huidige huur maximaal verhoogd mag worden.
+                                 Toelichting: per jaar, en nooit meer dan 1x per jaar, en gebaseerd op de regels voor
+                                 dit jaar. </p>
+                              </td>
                         </tr>
                         <tr>
                            <th>Mogelijk geen waarde</th>
@@ -2034,6 +2282,56 @@
          
          
          
+         </section>
+   </section>
+</section>
+<section id="lis" class="normative">
+   <h2>Inhoud van waardenlijsten</h2>
+   <!--MIMCM-IMXDigilab-1.0-0-20231128-20240111-080301 imvertor 2.0.0-->
+   <section id="">
+      <h3>Enumeratie inhoud   </h3><a class="anchor" id="graph_EAID_E3A2BC22_5E84_4d1e_9AC8_98B9FA886538"></a><a class="anchor" id="detail_class_InkomensafhankelijkeHuursverhoging_Inkomenscategorie"></a><section id="detail_class_InkomensafhankelijkeHuursverhoging_Inkomenscategorie">
+         <h4>Enumeratie details  Inkomenscategorie</h4>
+         
+         <table style="width: 100%;" class="list">
+            <colgroup></colgroup>
+            <tbody>
+               <tr>
+                  <td></td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <table style="width: 100%;" class="list">
+            <colgroup style="width: 40%;"></colgroup>
+            <colgroup style="width: 60%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Waarde</th>
+                  <th>Omschrijving</th>
+               </tr>
+               <tr>
+                  <th>H</th>
+                  <td>
+                     
+                     <p>Hoog</p>
+                     </td>
+               </tr>
+               <tr>
+                  <th>M</th>
+                  <td>
+                     
+                     <p>midden (hoog)</p>
+                     </td>
+               </tr>
+               <tr>
+                  <th>L</th>
+                  <td>
+                     
+                     <p>laag (midden)</p>
+                     </td>
+               </tr>
+            </tbody>
+         </table>
          </section>
    </section>
 </section>
