@@ -13,15 +13,15 @@ basisregistraties.![](media/7fd852816342cc38bb4657d9861c80e9.png)
 Voor de use cases Inkomensafhankelijke huurverhoging zijn gegevens nodig uit de
 volgende basisregistraties:
 
-\- Basisregistratie Adressen en Gebouwen (BAG)
+- Basisregistratie Adressen en Gebouwen (BAG)
 
-\- Basisregistratie Kadaster (BRK)
+- Basisregistratie Kadaster (BRK)
 
-\- Basisregistratie Inkomen (BRI)
+- Basisregistratie Inkomen (BRI)
 
-\- Basisregistratie Personen (BRP)
+- Basisregistratie Personen (BRP)
 
-\- Handelsregister (HR)
+- Handelsregister (HR)
 
 Voor de use case Opkoopbescherming zijn gegevens nodig uit de volgende
 basisregistraties:
@@ -44,4 +44,4 @@ Inkomenafhankelijke huurverhoging en Opkoopbescherming. Je kunt de spreadsheet
 [hier](https://github.com/Geonovum/imx-digilab/raw/main/vertaalspecificaties.xlsx)
 downloaden.
 
-![](media/d11e56b5e1d17acce686e911c20d81f1.png)
+![https://github.com/Geonovum/imx-digilab/raw/main/vertaalspecificaties.xlsx](media/d11e56b5e1d17acce686e911c20d81f1.png)
